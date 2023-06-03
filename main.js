@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var currentYear = new Date().getFullYear();
   title.textContent = currentYear;
-  yearLabel.textContent = "Wars in " + currentYear + ":";
+  yearLabel.textContent = "Wars and conflicts in" + currentYear + ":";
   warContainer.textContent = getTitle(currentYear);
 
   slider.value = currentYear;
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   slider.oninput = function () {
     var year = parseInt(this.value);
     title.textContent = year;
-    // yearLabel.textContent = "Wars in " + year + ":";
+    // yearLabel.textContent = "Wars and conflicts in " + year + ":";
     warContainer.textContent = getTitle(year);
   };
 });
