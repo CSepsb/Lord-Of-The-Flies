@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slider Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="main.js"></script>
+    <script src="data.js"></script>
+  </head>
+  <body>
+    <h1 id="title">2023</h1>
+    <div class="slider-container">
+      <span>1</span>
+      <input
+        type="range"
+        min="1"
+        max="2023"
+        value="2023"
+        id="yearSlider"
+        list="ticks"
+      />
+      <datalist id="ticks" class="ticks-list">
+        <option>0</option>
+        <option>100</option>
+        <option>200</option>
+        <option>300</option>
+        <option>400</option>
+        <option>500</option>
+        <option>600</option>
+        <option>700</option>
+        <option>800</option>
+        <option>900</option>
+        <option>1000</option>
+        <option>1100</option>
+        <option>1200</option>
+        <option>1300</option>
+        <option>1400</option>
+        <option>1500</option>
+        <option>1600</option>
+        <option>1700</option>
+        <option>1800</option>
+        <option>1900</option>
+        <option>2000</option>
+      </datalist>
+      <span>2023</span>
+    </div>
+    <p id="yearLabel"></p>
+    <div id="warContainer"></div>
+    <div class="arrow"></div>
+    <div>
+      <canvas id="my-canvas"></canvas>
+      <script src="functions.js"></script>
+      <script src="game.js"></script>
+    </div>
+  </body>
+</html>

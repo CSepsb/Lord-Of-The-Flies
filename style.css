@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding-top: 50px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  background: #151515;
+  color: #999;
+  overflow-y: auto; /* Add overflow-y to enable vertical scrolling */
+}
+
+#title {
+  font-size: 7vw;
+  text-align: center;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(20vh);
+}
+
+#warContainer {
+  margin: 5rem 50px;
+  margin-bottom: 100px;
+  text-align: center;
+  position: relative; /* Add relative positioning to the container */
+}
+
+#warContainer {
+  position: relative;
+}
+
+.arrow {
+  content: "";
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid #999;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+}
+
+
+#yearSlider {
+  width: 95%;
+}
+
+#yearLabel {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+#my-canvas {
+  padding-top: 200px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+}
