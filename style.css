@@ -9,7 +9,7 @@ body {
 }
 
 #title {
-  font-size: 7vw;
+  font-size: 6vw;
   text-align: center;
 }
 
@@ -21,8 +21,8 @@ body {
 }
 
 #warContainer {
-  margin: 5rem 50px;
-  margin-bottom: 100px;
+  margin: 3rem 50px;
+  margin-bottom: 50px;
   text-align: center;
   position: relative; /* Add relative positioning to the container */
 }
@@ -34,18 +34,16 @@ body {
 .arrow {
   content: "";
   position: absolute;
-  top: 95%;
   left: 50%;
   transform: translateX(-50%);
   border: solid #999;
   border-width: 0 2px 2px 0;
   display: inline-block;
-  padding: 4px;
+  padding: 5px;
   width: 8px;
   height: 8px;
   transform: rotate(45deg);
 }
-
 
 #yearSlider {
   width: 95%;
@@ -59,7 +57,7 @@ body {
 }
 
 #my-canvas {
-  padding-top: 200px;
+  padding-top: 300px;
   text-align: center;
   display: block;
   margin: 0 auto;
