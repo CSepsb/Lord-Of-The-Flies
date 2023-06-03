@@ -5,7 +5,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: #151515;
   color: #999;
-  overflow-y: auto; /* Add overflow-y to enable vertical scrolling */
+  overflow-y: auto;
 }
 
 #title {
@@ -24,10 +24,6 @@ body {
   margin: 3rem 50px;
   margin-bottom: 50px;
   text-align: center;
-  position: relative; /* Add relative positioning to the container */
-}
-
-#warContainer {
   position: relative;
 }
 
@@ -63,4 +59,15 @@ body {
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
+}
+
+/* Apply appearance styles for Google Chrome */
+#yearSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#yearSlider::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
 }
