@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var currentYear = new Date().getFullYear();
   title.textContent = currentYear;
-  yearLabel.textContent = "Wars and conflicts in" + currentYear + ":";
+  yearLabel.textContent = "Wars and conflicts in " + currentYear + ":";
   warContainer.textContent = getTitle(currentYear);
 
   slider.value = currentYear;
