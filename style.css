@@ -43,6 +43,7 @@ body {
 
 #yearSlider {
   width: 95%;
+  color: #999;
 }
 
 #yearLabel {
@@ -53,7 +54,7 @@ body {
 }
 
 #my-canvas {
-  padding-top: 300px;
+  padding-top: 30%;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -61,13 +62,6 @@ body {
   height: 100vh;
 }
 
-/* Apply appearance styles for Google Chrome */
-#yearSlider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-#yearSlider::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-  appearance: none;
+.ticks {
+  background-color: blue;
 }
