@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   slider.oninput = function () {
     var year = parseInt(this.value);
     title.textContent = year;
-    // yearLabel.textContent = "Wars and conflicts in " + year + ":";
+    yearLabel.textContent = "Wars and conflicts in " + year + ":";
     warContainer.textContent = getTitle(year);
   };
 });
