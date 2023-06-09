@@ -116,13 +116,3 @@ function reset() {
 
   distance = 0; // Reset the distance to 0 here
 }
-
-function gameOver() {
-  wallSpeed = -3;
-  death.play();
-  state = "gameover";
-  if (distance > best) {
-    best = distance;
-  }
-  setTimeout(reset, 1500);
-}

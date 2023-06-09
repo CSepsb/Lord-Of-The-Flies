@@ -18,9 +18,12 @@ function runGame() {
   moveHeli();
   moveWalls();
   checkCollisions();
-  distance += 1;
+
   // Draw
   drawGame();
+
+  // Update distance
+  distance++;
 }
 
 function moveHeli() {
@@ -151,7 +154,7 @@ function gameOver() {
   death.play();
   state = "gameover";
   if (distance > best) {
-    best = distance;
+    best = distance + 1;
   }
   setTimeout(reset, 1500);
 }
@@ -183,8 +186,8 @@ function drawMainComponents() {
   ctx.font = "30px Consolas";
   ctx.fillStyle = "black";
   ctx.fillText("FLYING PIGGY", 25, 35);
-  ctx.fillText("DISTANCE: " + distance, 25, cnv.height - 15);
-  ctx.fillText("BEST: " + best, cnv.width - 250, cnv.height - 15);
+  ctx.fillText("DISTANCE: " + Math.floor(distance), 25, cnv.height - 15);
+  ctx.fillText("BEST: " + Math.floor(best), cnv.width - 250, cnv.height - 15);
 
   // Update and draw the blood drops
   for (let i = 0; i < bloodDrops.length; i++) {
